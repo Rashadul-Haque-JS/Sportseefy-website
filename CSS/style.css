@@ -31,6 +31,7 @@
 
   .page-top {
     display: block;
+    padding-bottom: 50px;
   }
 
   .logo-log {
@@ -50,6 +51,10 @@
     margin: 25px 0px;
   }
 
+  .logo-style {
+    color: var(--others-color);
+  }
+
   input[type="button"] {
     padding: 4px 20px;
     margin-right: 15px;
@@ -58,12 +63,24 @@
     font-weight: 400;
     font-size: 1rem;
   }
+
   .top-text h1 {
     font-family: var(--font-headlines);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 70px;
     margin-bottom: 25px;
+    line-height: 2rem;
+  }
+
+  .top-text a {
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .top-text a img {
+    border-radius: 10px;
   }
 
   .top-text h2 {
@@ -82,93 +99,132 @@
   .sports-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0px 20px;
+
     grid-row-gap: 50px;
     font-size: 0.8rem;
     font-family: var(--font-paragraph);
     color: var(--primary-color);
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 
   .image-box {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 
-  .sports-latest{
-
-      font-size: 1rem;
-      font-family: var(--font-paragraph);
-      font-weight: 600;
-      background: url(/image/basketball-news.jpg) no-repeat ;
-      background-size: cover;
-      padding: 100px;
-      width: 70%;
-      border-radius: 5px;
-      color: var(--primary-color);
-      position: relative;
-      margin-bottom: 70px;
-      
+  .sports-latest {
+    font-size: 1rem;
+    font-family: var(--font-paragraph);
+    font-weight: 600;
+    background: url(/image/basketball-news.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width: 80%;
+    border-radius: 5px;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 150px;
   }
 
-  .sports-latest h2{
-      position: absolute;
-      top:8px
+  .sports-latest h2 {
+    position: absolute;
+    top: 8px;
+    left: 30px;
   }
 
-  .top-stories{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
+  .top-stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
   }
 
   .top-stories-now {
-      width: 50%; 
+    width: 60%;
+    padding-bottom: 50px;
   }
 
-  .top-stories-now img{
-      width: 100%;
-      padding-top: 30px;
+  .top-stories-now img {
+    width: 100%;
+    margin-top: 15px;
+    border: 5px solid #000;
+    border-radius: 10px;
 
   }
 
   .top-stories-now figcaption {
-      font-family: var(--font-paragraph);
-      color: var(--others-color);
-      font-weight: 600;
+    font-family: var(--font-paragraph);
+    color: var(--others-color);
+    font-weight: 600;
+    font-size: 1.1rem;
   }
 
-  .page-bottom{
-      display: block;
-      background-color: var(--secondary-color);
-      padding-top: 35px;
-      padding-bottom: 150px;
+  .top-stories-now a {
+    text-align: center;
+    cursor: pointer;
+    
+  }
+
+  .top-stories-now h4{
+    font-family: var(--font-headlines);
+    font-size: 1.3rem;
+  }
+
+  .sports-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0px 10px;
+    border-radius:20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .sports-type h2 {
+    font-family: var(--font-paragraph);
+    font-size: 1.5rem;
+  }
+
+  .sports-type a {
+    text-align: center;
+    cursor: pointer;
+  }
+  .sports-type img {
+    width: 40%;
+    border-radius: 100%;
+    justify-self: center;
+    margin-top: 15px;
+  }
+
+  .page-bottom {
+    display: block;
+    background-color: var(--primary-color);
+    padding-top: 35px;
+    padding-bottom: 150px;
+    opacity: 10;
   }
 
   .page-bottom address {
-      margin-left: 20px;
+    margin-left: 20px;
+    line-height: 1.6rem;
   }
 
   .page-bottom address span {
-      display: block;
-      color: #000;
+    display: block;
+    color: #000;
   }
 
-  .sports-portal{
-      margin: 50px 0px 0px 20px;
-     
+  .sports-portal {
+    margin: 50px 0px 0px 20px;
   }
 
-  .sports-portal a{
-      display: block;
-      
-      margin-top: 15px;
-      color: #000;
-      cursor: pointer;
+  .sports-portal a {
+    display: block;
+
+    margin-top: 15px;
+    color: #000;
+    cursor: pointer;
   }
-
-
-
-  
 }
