@@ -1,9 +1,9 @@
 :root {
-  --bg-color: #f1c40f;
-  --primary-color: #c0392b;
+  --bg-color: #ffdc62;
+  --primary-color: #e11640;
   --font-headlines: "Lora", serif;
   --font-paragraph: "Lato", sans-serif;
-  --font-logo: "Archivo", sans-serif;
+  --font-logo: "Playball", cursive;
   --secondary-color: #d0d3d4;
   --others-color: #f1f1f1;
 }
@@ -45,7 +45,7 @@
   .logo {
     color: var(--primary-color);
     font-family: var(--font-logo);
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     margin-left: 20px;
     margin: 25px 0px;
@@ -66,7 +66,7 @@
 
   .top-text h1 {
     font-family: var(--font-headlines);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     padding-top: 70px;
     margin-bottom: 25px;
@@ -81,6 +81,7 @@
 
   .top-text a img {
     border-radius: 10px;
+   
   }
 
   .top-text h2 {
@@ -142,6 +143,7 @@
   .top-stories-now {
     width: 60%;
     padding-bottom: 50px;
+    text-align: center;
   }
 
   .top-stories-now img {
@@ -149,23 +151,22 @@
     margin-top: 15px;
     border: 5px solid #000;
     border-radius: 10px;
-
   }
 
   .top-stories-now figcaption {
     font-family: var(--font-paragraph);
-    color: var(--others-color);
+    color: var(--primary-color);
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .top-stories-now a {
     text-align: center;
     cursor: pointer;
-    
   }
 
-  .top-stories-now h4{
+  .top-stories-now h4 {
     font-family: var(--font-headlines);
     font-size: 1.3rem;
   }
@@ -175,16 +176,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
     margin: 0px 10px;
-    border-radius:20px;
+    border-radius: 20px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .sports-type h2 {
     font-family: var(--font-paragraph);
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   .sports-type a {
@@ -203,7 +205,7 @@
     background-color: var(--primary-color);
     padding-top: 35px;
     padding-bottom: 150px;
-    opacity: 10;
+    opacity: 0.9;
   }
 
   .page-bottom address {
@@ -224,6 +226,228 @@
     display: block;
 
     margin-top: 15px;
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+/*----------------Desktop verson--------------------------Desktop------------------------------------->*/
+
+@media screen and (min-width: 481px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    background-color: var(--bg-color);
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container span {
+    display: block;
+  }
+
+  .logo-log {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 60px;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .logo {
+    color: var(--primary-color);
+    font-family: var(--font-logo);
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin-left: 30px;
+  }
+
+  input[type="button"] {
+    padding: 4px 20px;
+    margin-right: 35px;
+
+    border-radius: 4px;
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .top-text h1 {
+    font-family: var(--font-headlines);
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 25px;
+    line-height: 2rem;
+  }
+
+  .top-text a {
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  .top-text a img {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+  }
+
+  .top-text h2 {
+    font-family: var(--font-paragraph);
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    color: var(--others-color);
+  }
+
+  .page-middle {
+    display: block;
+    padding-top: 100px;
+  }
+
+  .sports-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-row-gap: 100px;
+    grid-column-gap: 50px;
+    font-size: 1rem;
+    font-family: var(--font-paragraph);
+    color: var(--primary-color);
+    padding-bottom: 250px;
+    margin: 0px 50px;
+  }
+
+  .sports-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .sports-type h2 {
+    font-family: var(--font-paragraph);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .sports-type a {
+    text-align: center;
+    cursor: pointer;
+  }
+  .sports-type img {
+    width: 40%;
+    border-radius: 100%;
+    justify-self: center;
+    margin-top: 15px;
+  }
+
+  .image-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sports-latest {
+    font-size: 1.3rem;
+    font-family: var(--font-paragraph);
+    font-weight: 600;
+    background: url(/image/basketball-news.jpg) no-repeat;
+    background-size: cover;
+    padding: 300px;
+    width: 60%;
+    border-radius: 5px;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 150px;
+  }
+
+  .sports-latest h2 {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+  }
+
+  .top-stories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 300px;
+  }
+
+  .top-stories-now {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+  }
+
+  .top-stories-now img {
+    width: 400px;
+
+    height: 300px;
+    margin-top: 15px;
+    border: 5px solid #000;
+    border-radius: 10px;
+  }
+
+  .top-stories-now figcaption {
+    font-family: var(--font-paragraph);
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  .top-stories-now a {
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .top-stories-now h2 {
+    font-family: var(--font-headlines);
+    font-size: 1.3rem;
+  }
+
+  .page-bottom {
+    display: flex;
+    background-color: var(--primary-color);
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 35px;
+    padding-bottom: 150px;
+    opacity: 0.9;
+  }
+
+  .page-bottom address {
+    margin-left: 20px;
+    line-height: 1.6rem;
+  }
+
+  .page-bottom address span {
+    display: block;
+    color: #000;
+  }
+
+ 
+  .sports-portal a {
+    display: block;
+    margin-bottom: 15px;
     color: #000;
     cursor: pointer;
   }
