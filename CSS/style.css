@@ -209,6 +209,7 @@
   }
 
   .page-bottom address {
+    display: block;
     margin-left: 20px;
     line-height: 1.6rem;
   }
@@ -435,6 +436,7 @@
   }
 
   .page-bottom address {
+    display: block;
     margin-left: 20px;
     line-height: 1.6rem;
   }
