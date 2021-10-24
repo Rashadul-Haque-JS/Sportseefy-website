@@ -261,10 +261,11 @@
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 60px;
-    position: sticky;
+    position:fixed;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
   }
 
   .logo {
@@ -453,4 +454,49 @@
     color: #000;
     cursor: pointer;
   }
+}
+
+@media screen and (max-width: 480px){
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    background-color: var(--bg-color);
+  }
+
+  .wc-logo-log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .wc-logo {
+    color: var(--primary-color);
+    font-family: var(--font-logo);
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-left: 20px;
+    margin: 25px 0px;
+  }
+
+  .wc-logo-style {
+    color: var(--others-color);
+  }
+
+  input[type="button"] {
+    padding: 4px 20px;
+    margin-right: 15px;
+    border-radius: 4px;
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
 }
